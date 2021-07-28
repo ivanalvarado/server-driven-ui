@@ -1,11 +1,16 @@
 package com.ivanalvarado
 
-import io.ktor.server.engine.*
+import io.ktor.application.*
+import io.ktor.response.*
+import io.ktor.routing.*
 import io.ktor.server.netty.*
-import com.ivanalvarado.plugins.*
 
-fun main() {
-    embeddedServer(Netty, port = 8080, host = "0.0.0.0") {
-        configureRouting()
-    }.start(wait = true)
+fun main(args: Array<String>): Unit = EngineMain.main(args)
+
+fun Application.module(testing: Boolean = false) {
+    routing {
+        get("/") {
+            call.respondText("Hello, from module!")
+        }
+    }
 }
