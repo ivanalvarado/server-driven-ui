@@ -5,6 +5,8 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface LocalService {
-    @GET("/theme/{theme}")
-    suspend fun getTheme(@Path("theme") theme: String): Response<ThemeResponse>
+    @GET("/theme/{requested_theme}")
+    suspend fun getTheme(
+        @Path("requested_theme") requestedTheme: String
+    ): Response<ThemeResponse>
 }
