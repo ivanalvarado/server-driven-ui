@@ -1,7 +1,8 @@
-package com.ivanalvarado.serverdrivenui.api
+package com.ivanalvarado.serverdrivenui.api.client
 
+import com.ivanalvarado.serverdrivenui.api.adapter.AdaptToDesignSystemColors
+import com.ivanalvarado.serverdrivenui.api.service.LocalService
 import com.ivanalvarado.serverdrivenui.model.ThemeResult
-import com.ivanalvarado.serverdrivenui.ui.theme.DesignSystemColors
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 

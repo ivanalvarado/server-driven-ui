@@ -1,5 +1,6 @@
-package com.ivanalvarado.serverdrivenui.api
+package com.ivanalvarado.serverdrivenui.api.service
 
+import com.ivanalvarado.serverdrivenui.api.ThemeResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path

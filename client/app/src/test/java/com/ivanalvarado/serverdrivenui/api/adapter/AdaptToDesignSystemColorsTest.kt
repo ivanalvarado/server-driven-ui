@@ -1,7 +1,8 @@
-package com.ivanalvarado.serverdrivenui.api
+package com.ivanalvarado.serverdrivenui.api.adapter
 
 import androidx.compose.ui.graphics.Color
 import com.google.common.truth.Truth.assertThat
+import com.ivanalvarado.serverdrivenui.api.ThemeResponse
 import com.ivanalvarado.serverdrivenui.ui.theme.DesignSystemColors
 import org.junit.Test
 import org.junit.runner.RunWith
