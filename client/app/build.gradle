@@ -65,4 +65,5 @@ dependencies {
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
 
     testImplementation "junit:junit:$junit_version"
+    testImplementation "com.google.truth:truth:$truth_version"
 }
