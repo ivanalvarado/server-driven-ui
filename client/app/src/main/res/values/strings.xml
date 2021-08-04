@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Server Driven UI</string>
+    <string name="error_fetching_design_system_colors">Failed to fetch design system colors!</string>
 </resources>

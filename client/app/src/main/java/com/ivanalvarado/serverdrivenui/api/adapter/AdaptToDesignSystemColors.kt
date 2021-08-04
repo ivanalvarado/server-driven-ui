@@ -1,7 +1,7 @@
 package com.ivanalvarado.serverdrivenui.api.adapter
 
 import androidx.compose.ui.graphics.Color
-import com.ivanalvarado.serverdrivenui.api.ThemeResponse
+import com.ivanalvarado.serverdrivenui.api.model.ThemeResponse
 import com.ivanalvarado.serverdrivenui.ui.theme.DesignSystemColors
 
 internal class AdaptToDesignSystemColors {

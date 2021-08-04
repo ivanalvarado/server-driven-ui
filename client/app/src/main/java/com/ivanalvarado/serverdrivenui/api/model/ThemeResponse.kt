@@ -1,4 +1,4 @@
-package com.ivanalvarado.serverdrivenui.api
+package com.ivanalvarado.serverdrivenui.api.model
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
