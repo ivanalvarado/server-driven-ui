@@ -37,6 +37,28 @@ class AdaptToDesignSystemColorsTest(
             return listOf(
                 testCase(
                     givenThemeResponse = ThemeResponse(
+                        primary = null,
+                        secondary = null,
+                        background = null,
+                        surface = null,
+                        onPrimary = null,
+                        onBackground = null,
+                        onSurface = null
+                    ),
+                    expectedDesignSystemColors = DesignSystemColors(
+                        primary = Color(-1),
+                        primaryVariant = Color(-1),
+                        secondary = Color(-1),
+                        background = Color(-1),
+                        surface = Color(-1),
+                        onPrimary = Color(-1),
+                        onSecondary = Color(-1),
+                        onBackground = Color(-1),
+                        onSurface = Color(-1)
+                    )
+                ),
+                testCase(
+                    givenThemeResponse = ThemeResponse(
                         primary = ColorApi(value = 1),
                         secondary = ColorApi(value = 2),
                         background = ColorApi(value = 3),

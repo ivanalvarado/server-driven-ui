@@ -5,6 +5,7 @@ import com.ivanalvarado.serverdrivenui.api.service.LocalService
 import com.ivanalvarado.serverdrivenui.model.Theme
 import com.ivanalvarado.serverdrivenui.model.ThemeAsync
 import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -30,8 +31,14 @@ object LocalClient {
         .build()
 
     private val retrofit = Retrofit.Builder()
-        .baseUrl(BASE_URL_DEVICE)
-        .addConverterFactory(MoshiConverterFactory.create(Moshi.Builder().build()))
+        .baseUrl(BASE_URL_EMULATOR)
+        .addConverterFactory(
+            MoshiConverterFactory.create(
+                Moshi.Builder()
+                    .add(KotlinJsonAdapterFactory())
+                    .build()
+            )
+        )
         .client(okHttpClient)
         .build()
 

@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.ivanalvarado.serverdrivenui"
-        minSdk 21
+        minSdk 24
         targetSdk 30
         versionCode 1
         versionName "1.0"
@@ -63,11 +63,13 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     implementation "com.google.android.material:material:$material_version"
     implementation "com.squareup.moshi:moshi:$moshi_version"
-    kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshi_version"
+    implementation "com.squareup.moshi:moshi-kotlin:$moshi_kotlin_version"
     implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
     implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
     implementation "com.squareup.retrofit2:converter-moshi:$retrofit_version"
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshi_version"
 
     testImplementation "junit:junit:$junit_version"
     testImplementation "com.google.truth:truth:$truth_version"
